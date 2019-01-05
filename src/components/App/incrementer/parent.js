@@ -19,7 +19,7 @@ class Parent extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = Parent.initialState;
+        this.props = Parent.initialState;
         this.increment = this.increment.bind(this);
         this.decrement = this.decrement.bind(this);
         this.reset = this.reset.bind(this);
@@ -51,8 +51,8 @@ class Parent extends React.Component {
                 <button onClick={this.increment}> {this.props.buttonText.increment} </button>
                 <button onClick={this.decrement}> {this.props.buttonText.decrement} </button>
                 <button onClick={this.reset}> {this.props.buttonText.reset} </button>
-                <div>{this.state.count}</div>
-                <Child count={this.state.count}/>
+                <div>{this.props.count}</div>
+                <Child count={this.props.count}/>
             </div>
         )
     }

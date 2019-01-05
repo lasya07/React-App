@@ -21,7 +21,7 @@ class Form extends React.Component {
         this.props.formSubmitCallback(
             this.state.name,
             this.state.alias,
-            this.state.team
+            this.state.team,
         
         )
         this.props.history.push('/List')
@@ -34,7 +34,7 @@ class Form extends React.Component {
 
     onAliasChange(event) {
         //console.log(event.target.value)
-        this.setState({alias: event.target.value})
+        this.setState({alias: event.target.vsalue})
     }
 
     onTeamChange(event) {
