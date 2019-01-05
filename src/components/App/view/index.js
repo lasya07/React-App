@@ -1,9 +1,11 @@
-import React from "react"
+import React from "react";
+
 
 class View extends React.Component {
     render() {
         return(
             <section>
+                
                 <h3>View Details</h3>
                 <div>Name: {this.props.name}</div>
                 <div>Alias: {this.props.alias}</div>
