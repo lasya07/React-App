@@ -30,7 +30,7 @@ class App extends React.Component {
     }
     createRecored(name, alias, team) {
         console.log(name, alias, team)
-        const ID = Math.random() * 100
+        const ID = (Math.random() * 100).toString()
         const newRecord = [ID, name, alias, team]
         const newTableValues = [...this.state.tableValues]
         newTableValues.push(newRecord)
